@@ -6,22 +6,6 @@ Face Embedding Generation – processes a dataset of faces, applies augmentation
 
 Face Recognition – loads stored embeddings, detects faces in new images, and performs recognition using cosine similarity.
 
-📂 Project Structure
-.
-├── dataset/                 # Training images (organized in folders per person)
-│   ├── person1/
-│   │   ├── img1.jpg
-│   │   └── img2.jpg
-│   └── person2/
-│       ├── img1.jpg
-│       └── img2.jpg
-├── test-images/             # Images to test recognition
-├── output/                  # Annotated results saved here
-├── face_embeddings.pkl      # Serialized embeddings dictionary (auto-generated)
-├── generate_embeddings.py   # Script to build embeddings + t-SNE visualization
-├── recognize_faces.py       # Script to perform face recognition
-└── README.md
-
 ⚙️ Installation
 
 Clone the repository
@@ -91,14 +75,7 @@ Console logs of detected identities with similarity scores
 
 Train embeddings:
 
-dataset/
-├── alice/
-│   ├── img1.jpg
-│   ├── img2.jpg
-└── bob/
-    ├── img1.jpg
-    └── img2.jpg
-
+<img width="800" height="600" alt="graph" src="https://github.com/user-attachments/assets/e86c9f5f-3b33-42ad-b323-0746b439dc54" />
 
 Run generate_embeddings.py → saves embeddings for Alice and Bob.
 
@@ -129,7 +106,3 @@ Face enrollment via webcam
 Web app integration (Flask / FastAPI)
 
 More advanced similarity threshold tuning
-
-📜 License
-
-This project is licensed under the MIT License.
