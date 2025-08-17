@@ -1,0 +1,13 @@
+class Student:
+    school = "Greenwood High"
+
+    def _init_(self, name):
+        self.name = name
+
+    @classmethod
+    def change_school(cls, new_school):
+        cls.school = new_school
+
+print(Student.school)         # Output: Greenwood High
+Student.change_school("Hilltop")
+print(Student.school) 
